@@ -1,24 +1,16 @@
-import {  useState } from "react"
-
 interface Props {
-  setCurrCity: (x: string) => void
+  setCity: (x: string) => void
 }
 
-export default function Search({ setCurrCity }: Props) {
-  const [input, setInput] = useState("")
+export default function Search({ setCity }: Props) {
   return (
     <div>
       <input
         onChange={e => {
-          setInput(e.target.value)
-        }}
-        onKeyDown={g => {
-          if (g.key === 'Enter') {
-            setCurrCity(input)
-          }
+          setCity(e.target.value)
         }}
         type="text"
-        placeholder='Enter A City'
+        placeholder='Search A City'
       />
     </div>
   )

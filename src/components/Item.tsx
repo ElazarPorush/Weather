@@ -1,18 +1,13 @@
 interface Props {
     itemName: string
-    setCurrUnit: (x: string) => void
+    setUnit: (x: string) => void
 }
 
-export default function Item({ itemName, setCurrUnit }: Props) {
+export default function Item({ itemName, setUnit }: Props) {
     return (
         <div className='item'>
             <button onClick={() => {
-                if (itemName === "℉"){
-                    setCurrUnit("imperial")
-                }
-                else {
-                    setCurrUnit("metric")
-                }
+                itemName === "℉"? setUnit("imperial"): setUnit("metric") 
             }}>{itemName}
             </button>
         </div>
