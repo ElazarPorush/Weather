@@ -1,0 +1,41 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background-image: url("https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?cs=srgb&dl=pexels-pixabay-209831.jpg&fm=jpg");
+}
+
+.f-or-c {
+  display: flex;
+  justify-content: center;
+}
+
+input, button{
+  padding: 2px;
+  border-radius: 15px;
+  border-color: black;
+}
+
+.item {
+  padding: 10px;
+}
+
+.item button {
+  width: 50px;
+}
+
+
